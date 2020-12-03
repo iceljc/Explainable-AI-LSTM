@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		table {
+		  border-collapse: collapse;
+		  width: 85%;
+		  font-size:110%;
+		}
+		table, th, td {
+		  border: 1px solid black;
+		}
+		tr.noBottomBorder td {
+		  border-bottom: none;
+		}
+		tr.noTopBorder td {
+		  border-top: none;
+		}
+		th, td {
+		  padding: 3px;
+		}
+	</style>
+</head>
+<body>
+	<div style="text-align: center;">
+		<table >
+		  <tr>
+		    <th>Method</th>
+		    <th>ID</th>
+		    <th>Label</th>
+		    <th>Sentence</th>
+		  </tr>
+		  <tr class="noBottomBorder">
+		    <td>SA</td>
+		    <td>1</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#ffbcbc">occasionally</span> <span style="background-color:#ff4949">melodramatic</span> <span style="background-color:#ffb8b8">,</span> <span style="background-color:#ffa8a8">it</span> <span style="background-color:#ff9e9e">'s</span> <span style="background-color:#ff8888">also</span> <span style="background-color:#ff0000">extremely</span> <span style="background-color:#ff0000">effective</span> <span style="background-color:#ffb3b3">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder noBottomBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#ffcccc">a</span> <span style="background-color:#ff7070">thoughtful</span> <span style="background-color:#ffb3b3">,</span> <span style="background-color:#ff8c8c">moving</span> <span style="background-color:#ff8282">piece</span> <span style="background-color:#ff9898">that</span> <span style="background-color:#ff6666">faces</span> <span style="background-color:#ff3636">difficult</span> <span style="background-color:#ff6c6c">issues</span> <span style="background-color:#ff8a8a">with</span> <span style="background-color:#ff0000">honesty</span> <span style="background-color:#ff6969">and</span> <span style="background-color:#ff3030">beauty</span> <span style="background-color:#ffc2c2">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		    <td></td>
+		    <td>3</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#ffcccc">it</span> <span style="background-color:#ffd2d2">'s</span> <span style="background-color:#ffdcdc">a</span> <span style="background-color:#ffb6b6">good</span> <span style="background-color:#ffc3c3">film</span> <span style="background-color:#ffdede">--</span> <span style="background-color:#ffd6d6">not</span> <span style="background-color:#ffdede">a</span> <span style="background-color:#ffa6a6">classic</span> <span style="background-color:#ffc6c6">,</span> <span style="background-color:#ffa0a0">but</span> <span style="background-color:#ff0000">odd</span> <span style="background-color:#ff7676">,</span> <span style="background-color:#ff0c0c">entertaining</span> <span style="background-color:#ff6464">and</span> <span style="background-color:#ff4c4c">authentic</span> <span style="background-color:#ffd6d6">.</span> </td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>&epsilon;-LRP-all</td>
+		    <td>1</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#eaeaff">occasionally</span> <span style="background-color:#9a9aff">melodramatic</span> <span style="background-color:#ffe4e4">,</span> <span style="background-color:#ff8e8e">it</span> <span style="background-color:#ffc0c0">'s</span> <span style="background-color:#ff0000">also</span> <span style="background-color:#ff9c9c">extremely</span> <span style="background-color:#ff2929">effective</span> <span style="background-color:#e0e0ff">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder noBottomBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#fffcfc">a</span> <span style="background-color:#ff4646">thoughtful</span> <span style="background-color:#e6e6ff">,</span> <span style="background-color:#ff6464">moving</span> <span style="background-color:#ff0c0c">piece</span> <span style="background-color:#ffeeee">that</span> <span style="background-color:#ff9e9e">faces</span> <span style="background-color:#1616ff; color: white">difficult</span> <span style="background-color:#1818ff; color: white">issues</span> <span style="background-color:#ff3131">with</span> <span style="background-color:#ff7979">honesty</span> <span style="background-color:#ff2020">and</span> <span style="background-color:#ff0000">beauty</span> <span style="background-color:#ffeeee">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		    <td></td>
+		    <td>3</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#ffeeee">it</span> <span style="background-color:#f8f8ff">'s</span> <span style="background-color:#fff8f8">a</span> <span style="background-color:#ffc0c0">good</span> <span style="background-color:#ffc2c2">film</span> <span style="background-color:#ffe4e4">--</span> <span style="background-color:#c8c8ff">not</span> <span style="background-color:#fff0f0">a</span> <span style="background-color:#ffdede">classic</span> <span style="background-color:#ffecec">,</span> <span style="background-color:#eaeaff">but</span> <span style="background-color:#cacaff">odd</span> <span style="background-color:#ffe8e8">,</span> <span style="background-color:#ff0000">entertaining</span> <span style="background-color:#ffb0b0">and</span> <span style="background-color:#ff9393">authentic</span> <span style="background-color:#f3f3ff">.</span> </td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>&epsilon;-LRP-relative</td>
+		    <td>1</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#e0e0ff">occasionally</span> <span style="background-color:#fff0f0">melodramatic</span> <span style="background-color:#ffecec">,</span> <span style="background-color:#5151ff; color: white">it</span> <span style="background-color:#1010ff; color: white">'s</span> <span style="background-color:#0000ff; color: white">also</span> <span style="background-color:#ffb0b0">extremely</span> <span style="background-color:#ff6868">effective</span> <span style="background-color:#fff8f8">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder noBottomBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#ff8686">a</span> <span style="background-color:#cacaff">thoughtful</span> <span style="background-color:#ffdcdc">,</span> <span style="background-color:#0000ff; color: white">moving</span> <span style="background-color:#3838ff; color: white">piece</span> <span style="background-color:#b6b6ff">that</span> <span style="background-color:#f8f8ff">faces</span> <span style="background-color:#ffa2a2">difficult</span> <span style="background-color:#fffcfc">issues</span> <span style="background-color:#fcfcff">with</span> <span style="background-color:#fefeff">honesty</span> <span style="background-color:#fcfcff">and</span> <span style="background-color:#fcfcff">beauty</span> <span style="background-color:#fffefe">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		    <td></td>
+		    <td>3</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#fff8f8">it</span> <span style="background-color:#fafaff">'s</span> <span style="background-color:#fefeff">a</span> <span style="background-color:#fffefe">good</span> <span style="background-color:#fffefe">film</span> <span style="background-color:#fffafa">--</span> <span style="background-color:#fffafa">not</span> <span style="background-color:#fff2f2">a</span> <span style="background-color:#fffafa">classic</span> <span style="background-color:#ffb3b3">,</span> <span style="background-color:#ff0000">but</span> <span style="background-color:#9393ff">odd</span> <span style="background-color:#fff4f4">,</span> <span style="background-color:#ff9696">entertaining</span> <span style="background-color:#f2f2ff">and</span> <span style="background-color:#ff8888">authentic</span> <span style="background-color:#eaeaff">.</span> </td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>&epsilon;-LRP-abs</td>
+		    <td>1</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#7474ff">occasionally</span> <span style="background-color:#ffe8e8">melodramatic</span> <span style="background-color:#fefeff">,</span> <span style="background-color:#0000ff;color: white">it</span> <span style="background-color:#0202ff; color: white">'s</span> <span style="background-color:#4444ff; color: white">also</span> <span style="background-color:#ff3131">extremely</span> <span style="background-color:#ff3838">effective</span> <span style="background-color:#fefeff">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder noBottomBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#ffaaaa">a</span> <span style="background-color:#9696ff">thoughtful</span> <span style="background-color:#9696ff">,</span> <span style="background-color:#0000ff; color: white">moving</span> <span style="background-color:#1414ff; color: white">piece</span> <span style="background-color:#4c4cff">that</span> <span style="background-color:#f2f2ff">faces</span> <span style="background-color:#ff0404">difficult</span> <span style="background-color:#fffcfc">issues</span> <span style="background-color:#f8f8ff">with</span> <span style="background-color:#fffefe">honesty</span> <span style="background-color:#f3f3ff">and</span> <span style="background-color:#fcfcff">beauty</span> <span style="background-color:#fff8f8">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		    <td></td>
+		    <td>3</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#fffafa">it</span> <span style="background-color:#fafaff">'s</span> <span style="background-color:#fcfcff">a</span> <span style="background-color:#ececff">good</span> <span style="background-color:#ffecec">film</span> <span style="background-color:#f8f8ff">--</span> <span style="background-color:#fffcfc">not</span> <span style="background-color:#fff8f8">a</span> <span style="background-color:#fffcfc">classic</span> <span style="background-color:#acacff">,</span> <span style="background-color:#0000ff; color: white">but</span> <span style="background-color:#ffbcbc">odd</span> <span style="background-color:#f3f3ff">,</span> <span style="background-color:#d0d0ff">entertaining</span> <span style="background-color:#fffcfc">and</span> <span style="background-color:#c2c2ff">authentic</span> <span style="background-color:#fff4f4">.</span> </td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>&beta;-LRP-all</td>
+		    <td>1</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#fff4f4">occasionally</span> <span style="background-color:#fff0f0">melodramatic</span> <span style="background-color:#ffecec">,</span> <span style="background-color:#fff0f0">it</span> <span style="background-color:#f6f6ff">'s</span> <span style="background-color:#fffefe">also</span> <span style="background-color:#f8f8ff">extremely</span> <span style="background-color:#d0d0ff">effective</span> <span style="background-color:#0000ff">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder noBottomBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#ff8888">a</span> <span style="background-color:#ff0000">thoughtful</span> <span style="background-color:#ffecec">,</span> <span style="background-color:#ffb8b8">moving</span> <span style="background-color:#ffdada">piece</span> <span style="background-color:#e2e2ff">that</span> <span style="background-color:#ececff">faces</span> <span style="background-color:#dcdcff">difficult</span> <span style="background-color:#e2e2ff">issues</span> <span style="background-color:#fff0f0">with</span> <span style="background-color:#ffeaea">honesty</span> <span style="background-color:#fefeff">and</span> <span style="background-color:#ff7c7c">beauty</span> <span style="background-color:#2c2cff">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		    <td></td>
+		    <td>3</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#ff0000">it</span> <span style="background-color:#ffa3a3">'s</span> <span style="background-color:#e8e8ff">a</span> <span style="background-color:#ffaeae">good</span> <span style="background-color:#ffd6d6">film</span> <span style="background-color:#ffe2e2">--</span> <span style="background-color:#b2b2ff">not</span> <span style="background-color:#f8f8ff">a</span> <span style="background-color:#ffeaea">classic</span> <span style="background-color:#fffefe">,</span> <span style="background-color:#d3d3ff">but</span> <span style="background-color:#dadaff">odd</span> <span style="background-color:#e6e6ff">,</span> <span style="background-color:#ffa8a8">entertaining</span> <span style="background-color:#eaeaff">and</span> <span style="background-color:#ffcccc">authentic</span> <span style="background-color:#3e3eff">.</span></td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>abs-LRP-all</td>
+		    <td>1</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#ffe4e4">occasionally</span> <span style="background-color:#fff8f8">melodramatic</span> <span style="background-color:#fffafa">,</span> <span style="background-color:#fffefe">it</span> <span style="background-color:#fffafa">'s</span> <span style="background-color:#fff0f0">also</span> <span style="background-color:#ffeeee">extremely</span> <span style="background-color:#ffa0a0">effective</span> <span style="background-color:#0000ff">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder noBottomBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#ffecec">a</span> <span style="background-color:#ff5858">thoughtful</span> <span style="background-color:#ffecec">,</span> <span style="background-color:#ffbebe">moving</span> <span style="background-color:#ffbebe">piece</span> <span style="background-color:#fff6f6">that</span> <span style="background-color:#fff2f2">faces</span> <span style="background-color:#e8e8ff">difficult</span> <span style="background-color:#e3e3ff">issues</span> <span style="background-color:#fafaff">with</span> <span style="background-color:#ffcccc">honesty</span> <span style="background-color:#ececff">and</span> <span style="background-color:#ffa3a3">beauty</span> <span style="background-color:#0000ff">.</span> </td>
+		  </tr>
+		  <tr class="noTopBorder">
+		    <td></td>
+		    <td>3</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#ff7070">it</span> <span style="background-color:#ffaeae">'s</span> <span style="background-color:#f6f6ff">a</span> <span style="background-color:#ffc6c6">good</span> <span style="background-color:#ffeaea">film</span> <span style="background-color:#ffd8d8">--</span> <span style="background-color:#c0c0ff">not</span> <span style="background-color:#fffefe">a</span> <span style="background-color:#ffe0e0">classic</span> <span style="background-color:#fff6f6">,</span> <span style="background-color:#f0f0ff">but</span> <span style="background-color:#e6e6ff">odd</span> <span style="background-color:#f6f6ff">,</span> <span style="background-color:#ff9e9e">entertaining</span> <span style="background-color:#fafaff">and</span> <span style="background-color:#ffaeae">authentic</span> <span style="background-color:#0000ff">.</span> </td>
+		  </tr>
+		  
+		</table>
+
+	</div>
+
+	<br>
+
+	<div style="text-align: center;">
+		<table >
+		  <tr>
+		    <th>Method</th>
+		    <th>ID</th>
+		    <th>Label</th>
+		    <th>Sentence</th>
+		  </tr>
+		  <tr class="noBottomBorder">
+		    <td>SA</td>
+		    <td>1</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#ff8383">after</span> <span style="background-color:#ff7474">that</span> <span style="background-color:#ff8c8c">,</span> <span style="background-color:#ff8686">it</span> <span style="background-color:#ff5e5e">just</span> <span style="background-color:#ff0000">gets</span> <span style="background-color:#ff1e1e">stupid</span> <span style="background-color:#ff5959">and</span> <span style="background-color:#ff1414">maudlin</span> <span style="background-color:#ffaeae">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder noBottomBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#ffa0a0">all</span> <span style="background-color:#ff7070">this</span> <span style="background-color:#ff0000">turns</span> <span style="background-color:#ff7676">out</span> <span style="background-color:#ffa3a3">to</span> <span style="background-color:#ff9a9a">be</span> <span style="background-color:#ff5454">neither</span> <span style="background-color:#ff1111">funny</span> <span style="background-color:#ff6666">nor</span> <span style="background-color:#ff2626">provocative</span> <span style="background-color:#ffaeae">-</span> <span style="background-color:#ff7e7e">only</span> <span style="background-color:#ff9c9c">dull</span> <span style="background-color:#ffecec">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		  	<td></td>
+		    <td>3</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#ffc0c0">it</span> <span style="background-color:#ff8888">'s</span> <span style="background-color:#ff4646">just</span> <span style="background-color:#ff0000">incredibly</span> <span style="background-color:#ff5151">dull</span> <span style="background-color:#ffd8d8">.</span> </td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>&epsilon;-LRP-all</td>
+		    <td>1</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#fff8f8">after</span> <span style="background-color:#fffefe">that</span> <span style="background-color:#fffafa">,</span> <span style="background-color:#fff8f8">it</span> <span style="background-color:#ffe0e0">just</span> <span style="background-color:#d0d0ff">gets</span> <span style="background-color:#ff0000">stupid</span> <span style="background-color:#e6e6ff">and</span> <span style="background-color:#ff6868">maudlin</span> <span style="background-color:#ececff">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder noBottomBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#ffa8a8">all</span> <span style="background-color:#ffc2c2">this</span> <span style="background-color:#d2d2ff">turns</span> <span style="background-color:#fffcfc">out</span> <span style="background-color:#ffbaba">to</span> <span style="background-color:#fff0f0">be</span> <span style="background-color:#ff8282">neither</span> <span style="background-color:#6c6cff">funny</span> <span style="background-color:#ffcaca">nor</span> <span style="background-color:#0000ff; color: white">provocative</span> <span style="background-color:#ffdede">-</span> <span style="background-color:#ffa6a6">only</span> <span style="background-color:#ff2828">dull</span> <span style="background-color:#dadaff">.</span> </td>
+		  </tr>
+		  <tr class="noTopBorder">
+		  	<td></td>
+		    <td>3</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#fff8f8">it</span> <span style="background-color:#fffafa">'s</span> <span style="background-color:#ffa2a2">just</span> <span style="background-color:#d6d6ff">incredibly</span> <span style="background-color:#ff0000">dull</span> <span style="background-color:#d8d8ff">.</span></td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>&epsilon;-LRP-relative</td>
+		    <td>1</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#8888ff">after</span> <span style="background-color:#0000ff; color: white">that</span> <span style="background-color:#fffcfc">,</span> <span style="background-color:#e0e0ff">it</span> <span style="background-color:#f0f0ff">just</span> <span style="background-color:#f0f0ff">gets</span> <span style="background-color:#fff4f4">stupid</span> <span style="background-color:#ff8080">and</span> <span style="background-color:#ffb0b0">maudlin</span> <span style="background-color:#ff3939">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder noBottomBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#1616ff; color: white">all</span> <span style="background-color:#cacaff">this</span> <span style="background-color:#ffcece">turns</span> <span style="background-color:#e8e8ff">out</span> <span style="background-color:#fffcfc">to</span> <span style="background-color:#fcfcff">be</span> <span style="background-color:#0000ff; color: white">neither</span> <span style="background-color:#ffdada">funny</span> <span style="background-color:#ff9c9c">nor</span> <span style="background-color:#c8c8ff">provocative</span> <span style="background-color:#5151ff">-</span> <span style="background-color:#dadaff">only</span> <span style="background-color:#ffacac">dull</span> <span style="background-color:#f8f8ff">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		  	<td></td>
+		    <td>3</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#ff6969">it</span> <span style="background-color:#ffcece">'s</span> <span style="background-color:#7676ff; color: white">just</span> <span style="background-color:#ff1010">incredibly</span> <span style="background-color:#ff0000">dull</span> <span style="background-color:#ff0000">.</span></td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>&epsilon;-LRP-abs</td>
+		    <td>1</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#b6b6ff">after</span> <span style="background-color:#8888ff">that</span> <span style="background-color:#f0f0ff">,</span> <span style="background-color:#fffafa">it</span> <span style="background-color:#fff2f2">just</span> <span style="background-color:#ffcece">gets</span> <span style="background-color:#ff9c9c">stupid</span> <span style="background-color:#fafaff">and</span> <span style="background-color:#ff7474">maudlin</span> <span style="background-color:#ff0000">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder noBottomBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#0000ff; color: white">all</span> <span style="background-color:#fffafa">this</span> <span style="background-color:#ffc8c8">turns</span> <span style="background-color:#ffdada">out</span> <span style="background-color:#d0d0ff">to</span> <span style="background-color:#fefeff">be</span> <span style="background-color:#e3e3ff">neither</span> <span style="background-color:#fffafa">funny</span> <span style="background-color:#ffd6d6">nor</span> <span style="background-color:#eaeaff">provocative</span> <span style="background-color:#babaff">-</span> <span style="background-color:#c2c2ff">only</span> <span style="background-color:#ffe0e0">dull</span> <span style="background-color:#fff6f6">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		  	<td></td>
+		    <td>3</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#ececff">it</span> <span style="background-color:#ffa3a3">'s</span> <span style="background-color:#4444ff; color: white">just</span> <span style="background-color:#ff8686">incredibly</span> <span style="background-color:#ff0101">dull</span> <span style="background-color:#ff0000">.</span></td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>&beta;-LRP-all</td>
+		    <td>1</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#ffecec">after</span> <span style="background-color:#f2f2ff">that</span> <span style="background-color:#f6f6ff">,</span> <span style="background-color:#f0f0ff">it</span> <span style="background-color:#fffefe">just</span> <span style="background-color:#fff4f4">gets</span> <span style="background-color:#ff0000">stupid</span> <span style="background-color:#eaeaff">and</span> <span style="background-color:#ff7676">maudlin</span> <span style="background-color:#eeeeff">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder noBottomBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#ffeaea">all</span> <span style="background-color:#fff6f6">this</span> <span style="background-color:#fffefe">turns</span> <span style="background-color:#fff8f8">out</span> <span style="background-color:#fefeff">to</span> <span style="background-color:#fcfcff">be</span> <span style="background-color:#fff8f8">neither</span> <span style="background-color:#fafaff">funny</span> <span style="background-color:#fff2f2">nor</span> <span style="background-color:#e2e2ff">provocative</span> <span style="background-color:#c2c2ff">-</span> <span style="background-color:#d6d6ff">only</span> <span style="background-color:#ff0000">dull</span> <span style="background-color:#7979ff">.</span> </td>
+		  </tr>
+		  <tr class="noTopBorder">
+		  	<td></td>
+		    <td>3</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#e8e8ff">it</span> <span style="background-color:#fefeff">'s</span> <span style="background-color:#ffdede">just</span> <span style="background-color:#fcfcff">incredibly</span> <span style="background-color:#ff0000">dull</span> <span style="background-color:#d3d3ff">.</span></td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>abs-LRP-all</td>
+		    <td>1</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#fff8f8">after</span> <span style="background-color:#e3e3ff">that</span> <span style="background-color:#f2f2ff">,</span> <span style="background-color:#eaeaff">it</span> <span style="background-color:#fffcfc">just</span> <span style="background-color:#f3f3ff">gets</span> <span style="background-color:#ff0000">stupid</span> <span style="background-color:#e0e0ff">and</span> <span style="background-color:#ff6969">maudlin</span> <span style="background-color:#e6e6ff">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder noBottomBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#fefeff">all</span> <span style="background-color:#fefeff">this</span> <span style="background-color:#fcfcff">turns</span> <span style="background-color:#fefeff">out</span> <span style="background-color:#fffefe">to</span> <span style="background-color:#fcfcff">be</span> <span style="background-color:#fff2f2">neither</span> <span style="background-color:#f0f0ff">funny</span> <span style="background-color:#ffeeee">nor</span> <span style="background-color:#e6e6ff">provocative</span> <span style="background-color:#ffe0e0">-</span> <span style="background-color:#ffe4e4">only</span> <span style="background-color:#ff0000">dull</span> <span style="background-color:#8a8aff">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		  	<td></td>
+		    <td>3</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#fff4f4">it</span> <span style="background-color:#fff0f0">'s</span> <span style="background-color:#ffe0e0">just</span> <span style="background-color:#fff6f6">incredibly</span> <span style="background-color:#ff0000">dull</span> <span style="background-color:#9a9aff">.</span></td>
+		  </tr>
+		  
+		</table>
+
+	</div>
+
+	<br>
+
+	<div style="text-align: center;">
+		<table >
+		  <tr>
+		    <th>Method</th>
+		    <th>ID</th>
+		    <th>Truth</th>
+		    <th>Prediction</th>
+		    <th>Sentence</th>
+		  </tr>
+		  <tr class="noBottomBorder">
+		    <td>SA</td>
+		    <td>1</td>
+		    <td>positive</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#ffbcbc">occasionally</span> <span style="background-color:#ff4949">melodramatic</span> <span style="background-color:#ffb8b8">,</span> <span style="background-color:#ffa8a8">it</span> <span style="background-color:#ff9e9e">'s</span> <span style="background-color:#ff8888">also</span> <span style="background-color:#ff0000">extremely</span> <span style="background-color:#ff0000">effective</span> <span style="background-color:#ffb3b3">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>negative</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#ffa0a0">all</span> <span style="background-color:#ff7070">this</span> <span style="background-color:#ff0000">turns</span> <span style="background-color:#ff7676">out</span> <span style="background-color:#ffa3a3">to</span> <span style="background-color:#ff9a9a">be</span> <span style="background-color:#ff5454">neither</span> <span style="background-color:#ff1111">funny</span> <span style="background-color:#ff6666">nor</span> <span style="background-color:#ff2626">provocative</span> <span style="background-color:#ffaeae">-</span> <span style="background-color:#ff7e7e">only</span> <span style="background-color:#ff9c9c">dull</span> <span style="background-color:#ffecec">.</span></td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>&epsilon;-LRP-all</td>
+		    <td>1</td>
+		    <td>positive</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#eaeaff">occasionally</span> <span style="background-color:#9a9aff">melodramatic</span> <span style="background-color:#ffe4e4">,</span> <span style="background-color:#ff8e8e">it</span> <span style="background-color:#ffc0c0">'s</span> <span style="background-color:#ff0000">also</span> <span style="background-color:#ff9c9c">extremely</span> <span style="background-color:#ff2929">effective</span> <span style="background-color:#e0e0ff">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>negative</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#ffa8a8">all</span> <span style="background-color:#ffc2c2">this</span> <span style="background-color:#d2d2ff">turns</span> <span style="background-color:#fffcfc">out</span> <span style="background-color:#ffbaba">to</span> <span style="background-color:#fff0f0">be</span> <span style="background-color:#ff8282">neither</span> <span style="background-color:#6c6cff">funny</span> <span style="background-color:#ffcaca">nor</span> <span style="background-color:#0000ff; color: white">provocative</span> <span style="background-color:#ffdede">-</span> <span style="background-color:#ffa6a6">only</span> <span style="background-color:#ff2828">dull</span> <span style="background-color:#dadaff">.</span> </td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>&epsilon;-LRP-relative</td>
+		    <td>1</td>
+		    <td>positive</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#e0e0ff">occasionally</span> <span style="background-color:#fff0f0">melodramatic</span> <span style="background-color:#ffecec">,</span> <span style="background-color:#5151ff; color: white">it</span> <span style="background-color:#1010ff; color: white">'s</span> <span style="background-color:#0000ff; color: white">also</span> <span style="background-color:#ffb0b0">extremely</span> <span style="background-color:#ff6868">effective</span> <span style="background-color:#fff8f8">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>negative</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#1616ff; color: white">all</span> <span style="background-color:#cacaff">this</span> <span style="background-color:#ffcece">turns</span> <span style="background-color:#e8e8ff">out</span> <span style="background-color:#fffcfc">to</span> <span style="background-color:#fcfcff">be</span> <span style="background-color:#0000ff; color: white">neither</span> <span style="background-color:#ffdada">funny</span> <span style="background-color:#ff9c9c">nor</span> <span style="background-color:#c8c8ff">provocative</span> <span style="background-color:#5151ff">-</span> <span style="background-color:#dadaff">only</span> <span style="background-color:#ffacac">dull</span> <span style="background-color:#f8f8ff">.</span></td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>&epsilon;-LRP-abs</td>
+		    <td>1</td>
+		    <td>positive</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#7474ff">occasionally</span> <span style="background-color:#ffe8e8">melodramatic</span> <span style="background-color:#fefeff">,</span> <span style="background-color:#0000ff;color: white">it</span> <span style="background-color:#0202ff; color: white">'s</span> <span style="background-color:#4444ff; color: white">also</span> <span style="background-color:#ff3131">extremely</span> <span style="background-color:#ff3838">effective</span> <span style="background-color:#fefeff">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>negative</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#0000ff; color: white">all</span> <span style="background-color:#fffafa">this</span> <span style="background-color:#ffc8c8">turns</span> <span style="background-color:#ffdada">out</span> <span style="background-color:#d0d0ff">to</span> <span style="background-color:#fefeff">be</span> <span style="background-color:#e3e3ff">neither</span> <span style="background-color:#fffafa">funny</span> <span style="background-color:#ffd6d6">nor</span> <span style="background-color:#eaeaff">provocative</span> <span style="background-color:#babaff">-</span> <span style="background-color:#c2c2ff">only</span> <span style="background-color:#ffe0e0">dull</span> <span style="background-color:#fff6f6">.</span></td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>&beta;-LRP-all</td>
+		    <td>1</td>
+		    <td>positive</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#fff4f4">occasionally</span> <span style="background-color:#fff0f0">melodramatic</span> <span style="background-color:#ffecec">,</span> <span style="background-color:#fff0f0">it</span> <span style="background-color:#f6f6ff">'s</span> <span style="background-color:#fffefe">also</span> <span style="background-color:#f8f8ff">extremely</span> <span style="background-color:#d0d0ff">effective</span> <span style="background-color:#0000ff">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>negative</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#ffeaea">all</span> <span style="background-color:#fff6f6">this</span> <span style="background-color:#fffefe">turns</span> <span style="background-color:#fff8f8">out</span> <span style="background-color:#fefeff">to</span> <span style="background-color:#fcfcff">be</span> <span style="background-color:#fff8f8">neither</span> <span style="background-color:#fafaff">funny</span> <span style="background-color:#fff2f2">nor</span> <span style="background-color:#e2e2ff">provocative</span> <span style="background-color:#c2c2ff">-</span> <span style="background-color:#d6d6ff">only</span> <span style="background-color:#ff0000">dull</span> <span style="background-color:#7979ff">.</span> </td>
+		  </tr>
+
+		  <tr class="noBottomBorder">
+		    <td>abs-LRP-all</td>
+		    <td>1</td>
+		    <td>positive</td>
+		    <td>positive</td>
+		    <td><span style="background-color:#ffe4e4">occasionally</span> <span style="background-color:#fff8f8">melodramatic</span> <span style="background-color:#fffafa">,</span> <span style="background-color:#fffefe">it</span> <span style="background-color:#fffafa">'s</span> <span style="background-color:#fff0f0">also</span> <span style="background-color:#ffeeee">extremely</span> <span style="background-color:#ffa0a0">effective</span> <span style="background-color:#0000ff">.</span></td>
+		  </tr>
+		  <tr class="noTopBorder">
+		    <td></td>
+		    <td>2</td>
+		    <td>negative</td>
+		    <td>negative</td>
+		    <td><span style="background-color:#fefeff">all</span> <span style="background-color:#fefeff">this</span> <span style="background-color:#fcfcff">turns</span> <span style="background-color:#fefeff">out</span> <span style="background-color:#fffefe">to</span> <span style="background-color:#fcfcff">be</span> <span style="background-color:#fff2f2">neither</span> <span style="background-color:#f0f0ff">funny</span> <span style="background-color:#ffeeee">nor</span> <span style="background-color:#e6e6ff">provocative</span> <span style="background-color:#ffe0e0">-</span> <span style="background-color:#ffe4e4">only</span> <span style="background-color:#ff0000">dull</span> <span style="background-color:#8a8aff">.</span></td>
+		  </tr>
+		  
+		</table>
+
+	</div>
+	
+</body>
+</html>
